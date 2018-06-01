@@ -1,49 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cannformatics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="Robert McKee" content="">
+    <meta name="author" content="">
 
-    <title>RCM</title>
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/colors/blue.css" rel="stylesheet">
+    <link href="assets/css/menu.css" rel="stylesheet">
+	<link href="assets/css/font-awesome.css" rel="stylesheet">
+	<link href="assets/css/linecons.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-</head>
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="assets/img/favicomatic/favicon.ico">
 
-<body>
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/img/favicomatic/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/favicomatic/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/favicomatic/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/favicomatic/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="assets/img/favicomatic/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/img/favicomatic/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="assets/img/favicomatic/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/img/favicomatic/apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="assets/img/favicomatic/favicon-196x196.png" sizes="196x196" />
+	<link rel="icon" type="image/png" href="assets/img/favicomatic/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="assets/img/favicomatic/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="assets/img/favicomatic/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="assets/img/favicomatic/favicon-128.png" sizes="128x128" />
+	<meta name="application-name" content="&nbsp;"/>
+	<meta name="msapplication-TileColor" content="#FFFFFF" />
+	<meta name="msapplication-TileImage" content="assets/img/favicomatic/mstile-144x144.png" />
+	<meta name="msapplication-square70x70logo" content="assets/img/favicomatic/mstile-70x70.png" />
+	<meta name="msapplication-square150x150logo" content="assets/img/favicomatic/mstile-150x150.png" />
+	<meta name="msapplication-wide310x150logo" content="assets/img/favicomatic/mstile-310x150.png" />
+	<meta name="msapplication-square310x310logo" content="assets/img/favicomatic/mstile-310x310.png" />
 
-    <!-- Header -->
-    <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1>Robert C McKee</h1>
-            <br>
-            <a href="https://www.linkedin.com/in/robertcmckee" class="btn btn-dark btn-lg">Linkedin</a>
-            <br>
-            <a href="Theme/rename-index.html" class="btn btn-dark btn-lg">other</a>
+    
+	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119682513-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
-        </div>
-    </header>
+	  gtag('config', 'UA-119682513-1');
+	</script>
 
-</body>
+  </head>
 
+  <body>
+
+    
+    <!-- === MENU === -->
+    
+    <div class="container-fluid">
+    <a class="brand hidden-phone"></a>
+		<div id="dl-menu" class="dl-menuwrapper">
+			<button class="dl-trigger">Open Menu</button>
+			<ul class="dl-menu">
+				<li><a href="#Team">Team</a></li>
+				<li><a href="privacy.html">Privacy</a></li>
+			</ul>
+		</div><!-- /dl-menuwrapper -->
+    </div><!-- /container-fluid -->
+
+    <!-- === TOP IMAGE AND TITLE ===  style="background-color:rgba(236, 240, 241,0.7)"-->
+    <div id="headerwrap">
+		<header class="clearfix">
+  		 	<div class="container"> 
+  		 		<h1 style="color: rgba(25, 112, 62,1.0)">Cannformatics</h1></br>
+				<p style="color: rgba(25, 112, 62)"><b>Tools For Individualized Medical Cannabis</b></p>
+  			</div><!-- /container -->
+  		</header>	    
+    </div><!-- /headerwrap -->
+    <div class="container-fluid">
+    	<div class="row-fluid">
+    		<div class="span1"></div>
+		    <div class="span10">
+				<h2 style="color: rgba(25, 112, 62)">A bioinformatics platform that evaluates the physiological condition of the individual to indicate which cannabis strain and dosage will be most effective for their specific condition, while minimizing undesirable side effects.</h2>
+			</div>
+			<div class="span1"></div>
+		</div>
+
+		<div class="row-fluid">
+    		<div class="span1"></div>
+		    <div class="span10">
+				<img class="img-responsive" src="assets/img/illustration2.jpeg">
+			</div>
+			<div class="span1"></div>
+		</div>
+
+		<div class="row-fluid">
+			<div class="span1"></div>
+		    <div class="span10">
+				<h3 style="color: rgba(25, 112, 62)">We are building a database to better understand the relationship between an individual’s biology and the many complexities of the cannabis plant. In the future, we will be collecting anonymous saliva samples, with perks for early participants. If you’re interested in being a part of Cannformatics, please provide us with the information you are comfortable sharing.<br/>
+				</h4>
+				<h3 style="color: rgba(25, 112, 62)">To sign up for the private beta just answer these 3 questions (less than a minute).
+				</h3>
+			</div>
+			<div class="span1"></div>
+		</div>
+		<div class="row-fluid">
+			<div class="span5"></div>
+		    <div class="span2">
+						<div class="button-b">
+							<a href="https://form.jotform.com/73138059084156">Sign Up</a>
+						</div>
+			</div>
+			<div class="span5"></div>
+		</div>
+		<div></div>
+		<div class="row-fluid">
+			<div class="span1"></div>
+			<div class="span10">
+				<script type="text/javascript" src="https://form.jotform.com/jsform/81217026099153"></script>
+			</div>
+			<div class="span1"></div>
+		</div>
+		<div class="span12 whitezone">
+	    	<h3 style="color: rgba(25, 112, 62)">For more information <a href="&#x6d;&#97;&#x69;&#108;&#116;&#111;&#58;&#x69;&#110;&#x66;&#x6f;&#64;&#99;&#97;&#110;&#x6e;&#102;&#x6f;&#114;&#x6d;&#97;&#116;&#105;&#99;&#x73;"><b>contact us here.</b></a></h3>
+	    </div>
+    </div>
+    <div id="Team">
+	    <div class="container-fluid greyzone">
+	    	<div class="row-fluid">
+		    	
+		    	<!-- === PROJECT LEADER was span6 greyzone=== -->
+		    	<div class="span6 greyzone"> 
+		    		<h4>Itzhak Kurek<i class="icon-chevron-down"></i></h4>
+		    		<br>
+		    		<p><img src="assets/img/ik.png" alt="" width="70px" height="70px" class="img-circle"> - <b>CEO and Co-Founder</b></p>
+		    		<p><b>Background:</b></p>
+		    		<p>Dr. Kurek is a senior biotech leader with experience in managing, consulting and research roles in the Ag-Biotech, Human and Nutritional Supplements, Renewable Energy and Biobased Products businesses. Dr. Kurek joined Cannformatics from Solix Algredients, a B2B supplier of algae-based natural ingredients where he served as R&D consultant at the Vice-President level. Previously,  Dr. Kurek worked at Kiverdi inc., a company making high-value oils and chemicals from waste carbon sources, as the Senior Director of R&D. Dr. Kurek held research scientist positions at Pioneer Hi-Bred (DuPont), Verdia Inc. and Maxygen Inc. Dr. Kurek has published 20 peer reviewed scientific papers and 10 granted US and international patents cited over 1,800 times.<br/><br/>
+
+		    		Dr. Kurek received his Ph.D. in Plant Sciences from Tel Aviv University and completed his postdoctoral research at the University of California, Davis. Dr. Kurek has also conducted research at the Technical University of Munich, John Innes Center Norwich, C.N.R.S Bordeaux and the Lawrence Berkeley National Laboratories.
+		    		</p>
+					<!-- Start of button-b -->
+						<div class="button-b">
+						<a href="https://www.linkedin.com/in/itzhak-kurek-0107113/">Linkedin</a>
+						</div>
+					<!-- End of button-b -->		    		
+		    	</div><!-- /span4 -->
+		    	<!-- === PROJECT INFO === -->
+		    	<div class="span6 greyzone">
+		    		<h4>Robert McKee<i class="icon-chevron-down"></i></h4>
+		    		<br>
+		    		<p><img src="assets/img/rm.jpg" alt="" width="70px" height="70px" class="img-circle"> - <b>CTO and Co-Founder</b></p>
+		    		<p><b>Background:</b></p>
+		    		<p>Mr. McKee is a patent lawyer with expertise in genetics, machine learning/artificial intelligence, data privacy law and technology commercialization. Mr. McKee joined Cannformatics from his law practice where he writes patents and ensures compliance with data privacy laws, and develops IP protection strategies for very early stage companies to ensure value creation. Previously, Mr. McKee worked at Kiverdi Inc., a company making high-value oils and chemicals from waste carbon sources, as IP and Business Development Associate. Mr. McKee held a microbiologist position at the Texas Department of State Health Services.<br/><br/>
+
+		    		Mr. McKee received his Master of Science in Technology Commercialization from the Red McCombs School of Business at the University of Texas, Austin. He holds a JD from the University of Houston, Texas and a BS in Microbiology from The University of Texas, Austin. Mr. McKee has also completed the UDACITY Machine Learning Engineer Nanodegree.
+		    		</p>
+					<!-- Start of button-b -->
+						<div class="button-b">
+						<a href="https://www.linkedin.com/in/robertcmckee">Linkedin</a>
+						</div>
+					<!-- End of button-b -->	    		
+		    	</div><!-- /span4 -->
+		    </div><!-- /row-fluid -->
+		    <div class="row-fluid">
+		    	<div class="span6 greyzone">
+		    		<h4>Mike Siani-Rose<i class="icon-chevron-down"></i></h4>
+		    		<br>
+		    		<p><img src="assets/img/Mike_Siani-Rose.png" alt="" width="70px" height="70px" class="img-circle"> - <b>VP of Computational Chemistry</b></p>
+		    		<p><b>Background:</b></p>
+		    		<p>Mr. Siani-rose has 20+ years of experience in regenerative medicine, biotechnology and bioinformatics. At Cannformatics, he provides project leadership for strategic corporate partnerships, leadership on computational biology and computational chemistry. He has been a project management consultant to Big Pharma/Biotech, directing projects that reach broadly across manufacturing organizations. Previously, as President and Founder of Theregen he raised $10M and led the company from preclinical through IND and two Phase I clinical trials for the implantable Anginera epicardial patch. He has extensive expertise in computational chemistry, drug discovery and bioinformatics from positions at Chiron Corporation (now Novartis), Kosan Biosciences and Affymetrix.<br/><br/>
+
+		    		Mike has 45+ publications, and ten issued patents in drug discovery, laboratory automation, bioinformatics, and regenerative medicine. He received his BS in Chemical Engineering from the University of Rochester, did graduate work in Computer Science at UCSD, and attended the BioExecutive Institute in the Haas School of Business at UC Berkeley.
+		    		</p>
+					<!-- Start of button-b -->
+						<div class="button-b">
+						<a href="https://www.linkedin.com/in/michael-siani-rose-aaa0501/">Linkedin</a>
+						</div>
+						<br>
+						<div class="button-b">
+						<a href="https://www.researchgate.net/profile/Michael_Siani-Rose">Research Gate</a>
+						</div>
+					<!-- End of button-b -->		    		
+		    	</div><!-- /span4 -->
+		    	<div class="span6 greyzone">
+		    		<h4>Todd Marcus<i class="icon-chevron-down"></i></h4>
+		    		<br>
+		    		<p><img src="assets/img/todd-marcus-3.png" alt="" width="70px" height="70px" class="img-circle"> - <b>Director of Business Development</b></p>
+		    		<p><b>Background:</b></p>
+		    		<p>Mr. Marcus is a business development leader with 15+ years of business-to-business and business-to-consumer marketing and sales experience in finance, e-commerce healthcare, and cannabis industries. He brings an understanding of the cannabis market demands and current solutions as well as a deep network of industry relationships to Cannformatics. Mr. Marcus is an expert in current medical cannabis treatments, including whole plant and active ingredient approaches.<br/><br/>
+
+					Mr. Marcus comes to Cannformatics from eFootDoctor.com, the e-commerce business that provided information and doctor recommended products for the treatment of various foot and ankle conditions, where he was the co-founder. His relationship management experience includes account executive and project management roles as well as a number of consulting responsibilities to businesses in a variety of industries.<br/><br/>
+
+					Mr. Marcus received his Master of Business Administration degree with a focus on Leadership Development and Global Management from the C.T. Bauer College of Business, University of Houston, receiving the Dean’s Award for Academic Excellence. He holds a Bachelor’s Degree in Literature, Science, and Arts from University of Michigan, Ann Arbor.<br/><br/>
+		    		<a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#x74;&#111;&#x64;&#x64;&#64;&#99;&#97;&#110;&#110;&#102;&#111;&#114;&#x6d;&#97;&#x74;&#x69;&#99;&#115;&#46;&#x63;&#x6f;&#x6d;" style='color:black'>To discuss business development and partnership opportunities contact Todd (at) cannformatics.com.</a></p>
+					<!-- Start of button-b -->
+						<div class="button-b">
+						<a href="https://www.linkedin.com/in/toddmmarcus/">Linkedin</a>
+						</div>
+						<br>
+					<!-- End of button-b -->		    		
+		    	</div><!-- /span6 -->
+	    	</div><!-- /row-fluid -->
+	    </div> <!-- /container-fluid -->
+   </div>
+
+    
+   <!-- === FOOTER SECTION === -->
+   
+   <div class="container-fluid">
+	   <div class="footerzone">
+		   <div class="row-fluid">
+			   <div class="span4">
+			   </div><!-- /span4 -->
+			   
+			   <div class="span4"><h4 style='text-align:center;vertical-align:middle'><a href='privacy.html'>privacy</a></h4>
+			   </div><!-- /span4 -->
+			   
+			   <div class="span4">
+			   </div><!-- /span4 -->
+		   </div><!-- /row-fluid -->
+	   </div><!-- /footerzone -->
+	   
+   </div><!-- /container-fluid -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/retina.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/toucheffects.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.cbpQTRotator.js"></script>
+		<script>
+			$( function() {
+				/*
+				- how to call the plugin:
+				$( selector ).cbpQTRotator( [options] );
+				- options:
+				{
+					// default transition speed (ms)
+					speed : 700,
+					// default transition easing
+					easing : 'ease',
+					// rotator interval (ms)
+					interval : 8000
+				}
+				- destroy:
+				$( selector ).cbpQTRotator( 'destroy' );
+				*/
+
+				$( '#cbp-qtrotator' ).cbpQTRotator();
+
+			} );
+		</script>
+	<script src="assets/js/jquery.dlmenu.js"></script>
+		<script>
+			$(function() {
+				$( '#dl-menu' ).dlmenu({
+					animationClasses : { classin : 'dl-animate-in-5', classout : 'dl-animate-out-5' }
+				});
+			});
+		</script>
+		
+  </body>
 </html>
